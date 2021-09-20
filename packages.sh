@@ -7,8 +7,9 @@ export PKG=(
   adobe-source-han-sans-tw-fonts
   alsa-utils
   arandr
-  aria2
-  # aspell-en #
+  aria2 # [uget+aria2] 号称Linux下的迅雷
+  aspell
+  aspell-en
   axel
   bat
   bc
@@ -25,27 +26,29 @@ export PKG=(
   cpupower
   curl
   # dbeaver #
-  diff-so-fancy
+  dialog
+  # diff-so-fancy #
   dnscrypt-proxy
   dnsmasq
   dos2unix
   dunst
   emacs
-  epdfview
   etcher
-  # exa #
+  exa
   fcitx5
   fcitx5-gtk
   fcitx5-qt
   fcitx5-configtool
   fcitx5-rime
+  fcitx5-pinyin-zhwiki-rime
   fcitx5-material-color
+  fd
   feh
-  flameshot
   freerdp
   fzf
   git
   # gitg #
+  git-delta
   gparted
   hardinfo
   hddtemp
@@ -64,6 +67,7 @@ export PKG=(
   # lxappearance #
   mupdf
   # mythes-en #
+  # nautilus # # [nautilus nautilus-mediainfo rabbitvcs-nautilus] 能够集成RabbitVCS插件，实现Windows下TortoiseSVN+TortoiseGit的功能
   ncdu
   neofetch
   neovim
@@ -93,6 +97,7 @@ export PKG=(
   python-pip
   # qemu #
   ranger
+  # rabbitvcs-nautilus #
   # rclone #
   redshift
   remmina
@@ -100,6 +105,7 @@ export PKG=(
   rofi
   rsync
   # screenkey #
+  shfmt
   # skopeo #
   smartmontools
   # softmaker-office-2021 #
@@ -111,6 +117,9 @@ export PKG=(
   terminus-font
   termite
   the_silver_searcher
+  # thunderbird # # Linux下最好用的 GUI 邮件客户端
+  # thunderbird-i18n-zh-cn #
+  # birdtray # # 可以让ThunderBird最小化时在系统栏以图标显示
   # time #
   tlp
   # tmux #
@@ -124,6 +133,7 @@ export PKG=(
   ttf-jetbrains-mono
   ttf-liberation
   ttf-polybar-icons
+  ttf-sarasa-gothic # 更纱黑体字体通过融合现有字体实现中文字符的宽度刚好是英文字符宽度的两倍
   uget
   unbound
   unclutter
@@ -137,6 +147,7 @@ export PKG=(
   # virtualbox-ext-oracle #
   # virtualbox-guest-iso #
   vlc
+  wakatime
   wget
   wireguard-dkms
   wireguard-tools
@@ -145,6 +156,7 @@ export PKG=(
   wqy-microhei
   wqy-zenhei
   yad
+  yarn
   yay
   zathura-pdf-mupdf
   zeal
@@ -153,26 +165,35 @@ export PKG=(
 )
 
 export AUR=(
-  # baidunetdisk-bin #
+  arch-wiki-man
+  baidunetdisk-bin # 百度官方出品Linux客户端
   # dcron #
-  # drawio-desktop-bin #
-  # franz #
-  # franz-manjaro #
   google-chrome
   i3lock-fancy-git
-  # korla-icon-theme-git #
   mons
   # motrix #
+  # nautilus-mediainfo #
   pyenv-virtualenv
-  qv2ray
-  qv2ray-plugin-trojan
   rainbow
   # rdm-bin #
-  # slack-desktop #
   # spotify #
-  sublime-text
+  sublime-text-4
   tldr++
-  # tuned # 
-  visual-studio-code-bin
+  ttf-babelstone-han
+  ttf-symbola # Emacs has a default fall-back to Symbola
+  ttf-unifont
+  # tuned #
   # watchexec #
+  # wemeet-bin # # 腾讯视频会议
+)
+
+export archlinuxcn=(
+  # drawio-desktop-bin # # 流程图制作软件
+  flameshot-git
+  # franz #
+  qv2ray-dev-git
+  qv2ray-plugin-trojan-dev-git
+  # slack-desktop #
+  unzip-iconv
+  visual-studio-code-bin # 真正微软出品的 VSCode
 )
