@@ -1,199 +1,315 @@
 #!/bin/bash
 
 export PKG=(
-  adobe-source-code-pro-fonts
-  adobe-source-han-sans-cn-fonts
-  adobe-source-han-sans-jp-fonts
-  adobe-source-han-sans-tw-fonts
+  7zip
+  acpid
+  act
+  adobe-source-han-sans-otc-fonts
+  adobe-source-han-serif-otc-fonts
+  alsa-firmware
+  alsa-plugins
   alsa-utils
   arandr
-  aria2 # [uget+aria2] 号称Linux下的迅雷
+  archlinux-appstream-data
+  asciiquarium
   aspell
   aspell-en
+  ast-grep
+  autorandr
+  awesome-terminal-fonts
   axel
+  base
+  base-devel
+  bash-completion
   bat
   bc
   bind
   bleachbit
-  # blueman #
-  # btrfs-progs #
-  # buildah #
-  calibre
-  clipit
-  cmake
+  blueman
+  bluez
+  bluez-utils
+  bottom
+  brightnessctl
+  btrfs-progs
+  buildah
+  clipcat
+  cloc
   cmatrix
   cockpit
+  cockpit-docker
+  cockpit-files
+  cockpit-machines
+  cockpit-packagekit
+  cockpit-podman
+  cockpit-storaged
   cpupower
-  curl
-  # dbeaver #
-  dialog
-  # diff-so-fancy #
-  dnscrypt-proxy
-  dnsmasq
-  dos2unix
+  cpu-x
+  ctop
+  dbus-broker-units
+  dhcpcd
+  difftastic
+  docker
+  docker-buildx
+  docker-compose
+  duf
   dunst
-  emacs
-  etcher
-  exa
+  dust
+  efibootmgr
+  eza
+  fastfetch
   fcitx5
   fcitx5-gtk
-  fcitx5-qt
-  fcitx5-configtool
-  fcitx5-rime
-  fcitx5-pinyin-zhwiki-rime
   fcitx5-material-color
+  fcitx5-qt
+  fcitx5-rime
   fd
   feh
+  figlet
+  file-roller
+  flameshot
   freerdp
   fzf
+  gdu
+  geoclue
+  ghostty
   git
-  # gitg #
   git-delta
-  gparted
-  hardinfo
+  github-cli
+  git-sizer
+  glmark2
+  go
+  go-yq
+  gping
+  grc
+  grub
+  gstreamer-vaapi
+  gufw
+  gvfs
+  haveged
   hddtemp
   htop
-  # [manjaro-i3-settings]依赖了下列各个“i3-XXX” #
-  # manjaro-i3-settings #
-  # i3-gaps #
-  # i3-scripts #
-  # i3status-manjaro #
-  inotify-tools
+  i3lock
+  i3-wm
+  imagemagick
+  inetutils
+  intel-graphics-compiler
+  intel-media-driver
+  intel-ucode
+  inter-font
   inxi
-  # languagetool #
-  libqalculate
-  # libmythes #
-  lm_sensors
-  # lxappearance #
-  mupdf
-  # mythes-en #
-  # nautilus # # [nautilus nautilus-mediainfo rabbitvcs-nautilus] 能够集成RabbitVCS插件，实现Windows下TortoiseSVN+TortoiseGit的功能
-  ncdu
-  neofetch
+  jack2
+  jack_delay
+  jq
+  just
+  lazydocker
+  lftp
+  libva-utils
+  libvdpau-va-gl
+  linux
+  linux-firmware-intel
+  linux-headers
+  linux-zen
+  linux-zen-headers
+  llvm
+  lsb-release
+  lshw
+  lxappearance
+  man-db
+  man-pages
+  man-pages-zh_cn
+  mcfly
+  meld
+  mesa-utils
+  mpv
   neovim
-  # network-manager-applet #
-  notify-osd
-  noto-fonts-cjk
-  noto-fonts-emoji
-  # numlockx #
+  net-tools
+  networkmanager
+  network-manager-applet
   nvm
-  packagekit
-  # parallel #
-  pasystray
-  pavucontrol-qt
+  nvtop
+  obsidian
+  obsidian-icon-theme
+  openai-codex
+  openbsd-netcat
+  openmp
+  otf-font-awesome
+  pacman-contrib
+  parallel
+  pgformatter
+  picom
+  pipewire-alsa
+  pipewire-jack-client
+  pipewire-libcamera
+  pipewire-pulse
+  pipewire-x11-bell
   pkgfile
   playerctl
-  podman
   podman-compose
   polybar
   powertop
+  procs
   proxychains-ng
-  pulseaudio
-  pulseaudio-alsa
-  pulseaudio-bluetooth
-  pulseaudio-control
-  # pv #
-  pyenv
-  python-pip
-  # qemu #
+  pv
+  qalculate-qt
   ranger
-  # rabbitvcs-nautilus #
-  # rclone #
+  realtime-privileges
   redshift
   remmina
   ripgrep
   rofi
-  rsync
-  # screenkey #
+  rtkit
+  ruff
+  rustnet
+  rustup
+  sddm
   shfmt
-  # skopeo #
-  smartmontools
-  # softmaker-office-2021 #
+  sl
   speedcrunch
-  speedtest-cli
+  sqlitebrowser
   stow
-  subversion
-  sxhkd
-  terminus-font
-  termite
-  the_silver_searcher
-  # thunderbird # # Linux下最好用的 GUI 邮件客户端
-  # thunderbird-i18n-zh-cn #
-  # birdtray # # 可以让ThunderBird最小化时在系统栏以图标显示
-  # time #
-  tlp
-  # tmux #
-  # tomcat-native #
+  strace
+  sysfsutils
+  sysstat
+  tealdeer
+  telegram-desktop
+  thunar
+  thunar-archive-plugin
+  thunar-volman
+  tk
+  tmux
   tree
   ttf-dejavu
-  ttf-font-awesome
-  ttf-hack
-  ttf-hanazono
-  ttf-inconsolata
+  ttf-dejavu-nerd
+  ttf-firacode-nerd
   ttf-jetbrains-mono
+  ttf-jetbrains-mono-nerd
   ttf-liberation
-  ttf-polybar-icons
-  ttf-sarasa-gothic # 更纱黑体字体通过融合现有字体实现中文字符的宽度刚好是英文字符宽度的两倍
-  uget
-  unbound
-  unclutter
+  ttf-nerd-fonts-symbols-mono
+  ttf-roboto
+  tumbler
+  udisks2
+  unrar
   unzip
-  upower
-  v2ray
-  viewnior
-  # virt-manager #
-  # virt-viewer #
-  # virtualbox #
-  # virtualbox-ext-oracle #
-  # virtualbox-guest-iso #
+  usbutils
+  uv
+  vdpauinfo
+  vi
+  vim
+  virtualbox
+  virtualbox-guest-utils
+  virtualbox-host-modules-arch
   vlc
-  wakatime
+  vpl-gpu-rt
+  vulkan-intel
+  vulkan-tools
+  wezterm
   wget
-  wireguard-dkms
-  wireguard-tools
   wmctrl
   workrave
-  wqy-microhei
-  wqy-zenhei
+  xcape
+  xclip
+  xdotool
+  xfsprogs
+  xorg-bdftopcf
+  xorg-iceauth
+  xorg-mkfontscale
+  xorg-server
+  xorg-sessreg
+  xorg-setxkbmap
+  xorg-smproxy
+  xorg-x11perf
+  xorg-xauth
+  xorg-xbacklight
+  xorg-xclock
+  xorg-xcmsdb
+  xorg-xcursorgen
+  xorg-xdpyinfo
+  xorg-xdriinfo
+  xorg-xev
+  xorg-xgamma
+  xorg-xhost
+  xorg-xinit
+  xorg-xinput
+  xorg-xkbcomp
+  xorg-xkbevd
+  xorg-xkbprint
+  xorg-xkbutils
+  xorg-xkill
+  xorg-xlsatoms
+  xorg-xlsclients
+  xorg-xmodmap
+  xorg-xpr
+  xorg-xprop
+  xorg-xrandr
+  xorg-xrdb
+  xorg-xrefresh
+  xorg-xset
+  xorg-xsetroot
+  xorg-xvinfo
+  xorg-xwd
+  xorg-xwininfo
+  xorg-xwud
+  xsel
   yad
-  yarn
-  yay
-  zathura-pdf-mupdf
-  zeal
+  z
+  zenity
+  zram-generator
   zsh
-  zsh-theme-powerlevel10k
+  zsh-completions
 )
 
 export AUR=(
-  arch-wiki-man
-  baidunetdisk-bin # 百度官方出品Linux客户端
-  # dcron #
+  aic94xx-firmware
+  anydesk-bin
+  arc-gtk-theme
+  brave-bin
+  cc-switch-bin
+  ccze
+  cockpit-navigator
+  github520-git
+  go-chroma-bin
   google-chrome
-  i3lock-fancy-git
-  mons
-  # motrix #
-  # nautilus-mediainfo #
-  pyenv-virtualenv
+  gpu-viewer
+  gtk2
+  has
+  highlight-pointer
+  intel-hybrid-codec-driver-git
+  keynav
+  localsend-bin
+  logviewer-bin
+  nitrogen
+  opencode-bin
+  pacfiles
+  package-query
+  pa-notify
+  piper-speak
+  piper-tts-bin
+  podman-tui
+  powerkit
+  pwvucontrol
+  qpdfview
+  qview
   rainbow
-  # rdm-bin #
-  # spotify #
+  redir
+  rofi-vscode-mode
+  rxvt-unicode-truecolor-wide-glyphs
+  sampler
+  scc
+  sddm-conf
+  sddm-theme-greenleaf
+  siji-ttf
+  sourcetrail
   sublime-text-4
-  tldr++
-  ttf-babelstone-han
-  ttf-symbola # Emacs has a default fall-back to Symbola
+  ttf-twemoji
   ttf-unifont
-  # tuned #
-  # watchexec #
-  # wemeet-bin # # 腾讯视频会议
+  visual-studio-code-bin
+  xbanish
+  xorgxrdp-glamor
+  yay
 )
 
 export archlinuxcn=(
-  # drawio-desktop-bin # # 流程图制作软件
-  flameshot-git
-  # franz #
-  qv2ray-dev-git
-  qv2ray-plugin-trojan-dev-git
-  # slack-desktop #
-  unzip-iconv
-  visual-studio-code-bin # 真正微软出品的 VSCode
+  archlinuxcn-keyring
+  arch-wiki-docs-zh-cn
+  emacs-git
 )
