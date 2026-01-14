@@ -26,7 +26,10 @@ function _update() {
   fi
 }
 
+# Install package from the offical repoistories
+# -----------------------------------------------------------------------------
 function _install() {
+  [ -f /var/lib/pacman/db.lck ] && rm /var/lib/pacman/db.lck
   if [[ $1 == "core" ]]; then
     for pkg in "${PKG[@]}"; do
       echo_info "Installing ${pkg}..."
@@ -49,3 +52,25 @@ function _install() {
   fi
 }
 
+# Remove package
+# -----------------------------------------------------------------------------
+function _uninstall() {
+  [ -f /var/lib/pacman/db.lck ] && rm /var/lib/pacman/db.lck
+  # pacman -Rnsc --noconfirm $@
+  if [[ $1 == "core" ]]; then
+    for pkg in "${PKG[@]}"; do
+      echo_info "Uninstalling ${pkg}..."
+      sudo "$PKGMN" "$PKGR" "$pkg" "${PKGOPT[@]}"
+      echo_done "${pkg} installed!"
+    done
+  elif [[ $1 == "aur" ]]; then
+    for aur in "${AUR[@]}"; do
+      echo_info "Uninstalling ${aur}..."
+      yay "$PKGR" "$aur" --needed --noconfirm
+      echo_done "${aur} installed!"
+    done
+  else
+    echo_info "Intalling ${1}..."
+    sudo "$PKGMN" "$PKGR" "$1"
+  fi
+}
