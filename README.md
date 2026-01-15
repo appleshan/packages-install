@@ -17,7 +17,7 @@ A bash script to install what I think are necessary applications.
 4. Type in terminal to run:
 
    ```bash
-   sudo ./install.sh
+   ./install.sh
    ```
 
 ## Tested Platforms
