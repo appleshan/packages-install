@@ -60,17 +60,17 @@ function _uninstall() {
   if [[ $1 == "core" ]]; then
     for pkg in "${PKG[@]}"; do
       echo_info "Uninstalling ${pkg}..."
-      sudo "$PKGMN" "$PKGR" "$pkg" "${PKGOPT[@]}"
+      sudo "$PKGMN" "$PKGR" "$pkg" --noconfirm
       echo_done "${pkg} installed!"
     done
   elif [[ $1 == "aur" ]]; then
     for aur in "${AUR[@]}"; do
       echo_info "Uninstalling ${aur}..."
-      yay "$PKGR" "$aur" --needed --noconfirm
+      yay "$PKGR" "$aur" --noconfirm
       echo_done "${aur} installed!"
     done
   else
-    echo_info "Intalling ${1}..."
+    echo_info "Uninstalling ${1}..."
     sudo "$PKGMN" "$PKGR" "$1"
   fi
 }
