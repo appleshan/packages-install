@@ -2,7 +2,6 @@
 
 export PKG=(
   7zip
-  acpid
   act
   adobe-source-han-sans-otc-fonts
   adobe-source-han-serif-otc-fonts
@@ -10,10 +9,7 @@ export PKG=(
   alsa-plugins
   alsa-utils
   arandr
-  archlinux-appstream-data
   asciiquarium
-  aspell
-  aspell-en
   ast-grep
   autorandr
   awesome-terminal-fonts
@@ -21,7 +17,6 @@ export PKG=(
   base
   base-devel
   bash-completion
-  bat
   bc
   bind
   bleachbit
@@ -80,7 +75,6 @@ export PKG=(
   go
   go-yq
   gping
-  grc
   grub
   gstreamer-vaapi
   gufw
@@ -131,7 +125,6 @@ export PKG=(
   obsidian-icon-theme
   openai-codex
   openbsd-netcat
-  openmp
   otf-font-awesome
   pacman-contrib
   parallel
@@ -150,7 +143,6 @@ export PKG=(
   procs
   proxychains-ng
   pv
-  qalculate-qt
   ranger
   realtime-privileges
   redshift
@@ -283,7 +275,7 @@ export AUR=(
   package-query
   pa-notify
   piper-speak
-  piper-tts-bin
+  piper-tts
   podman-tui
   powerkit
   pwvucontrol
