@@ -61,13 +61,13 @@ function _uninstall() {
     for pkg in "${PKG[@]}"; do
       echo_info "Uninstalling ${pkg}..."
       sudo "$PKGMN" "$PKGR" "$pkg" --noconfirm
-      echo_done "${pkg} installed!"
+      echo_done "${pkg} uninstalled!"
     done
   elif [[ $1 == "aur" ]]; then
     for aur in "${AUR[@]}"; do
       echo_info "Uninstalling ${aur}..."
       yay "$PKGR" "$aur" --noconfirm
-      echo_done "${aur} installed!"
+      echo_done "${aur} uninstalled!"
     done
   else
     echo_info "Uninstalling ${1}..."
